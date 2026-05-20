@@ -7,3 +7,11 @@ class Book:
     
     def get_info(self):
         return f"{self.title} | {self.author} | {self.year}"
+    
+    def checkout(self):
+        if self.is_available:
+            self.is_available == False
+            return "Book checked out"
+        else:
+            return "Book not available"
+
