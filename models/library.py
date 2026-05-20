@@ -3,5 +3,7 @@ class Library:
         self.name = name
         self.books = []
     
-    
+    def add_book(self,book):
+        self.books.append(book)
+        return self.books
         
