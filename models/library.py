@@ -12,5 +12,8 @@ class Library:
     
     def search_by_author(self, author):
         return [book for book in self.books if book.author == author]
+    
+    def get_total_books(self):
+        return len(self.books)
 
         
