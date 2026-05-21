@@ -8,7 +8,7 @@ class Library:
         return self.books
     
     def get_available_books(self):
-        return [book for book in self.books if book.available]
+        return [book for book in self.books if book.is_available]
     
     def search_by_author(self, author):
         return [book for book in self.books if book.author == author]
