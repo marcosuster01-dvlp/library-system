@@ -17,3 +17,9 @@ def test_checkout_not_available():
 
     not_available = bk.checkout()
     assert not_available == "Book not available"
+
+def test_return_book():
+    bk = Book("The Hobbit", "R.R. Tolkien", 2010)
+    bk.checkout()
+    bk.return_book()
+    assert bk.is_available == True
